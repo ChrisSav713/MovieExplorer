@@ -8,13 +8,14 @@ import Single from './components/Single'
 import Trending from './components/Trending'
 import Search from './components/Search'
 import Nav from './components/Nav'
-import Detail from './components/Detail'
+import DetailMovie from './components/DetailMovie'
+import DetailTv from './components/DetailTv'
 
 function App() {
   return (
     <>
       <Nav></Nav>
-      <header className='App-header'>Movies</header>
+      <header className='App-header'></header>
       <BrowserRouter>
         <Routes>
           <Route path='/' default element={<Home />} />
@@ -24,7 +25,8 @@ function App() {
           <Route path='/single' element={<Single />} />
           <Route path='/trending' element={<Trending />} />
           <Route path='/search' element={<Search />} />
-          <Route path='/detail/:id' element={<Detail />} />
+          <Route path='/detailmovie/:id/' element={<DetailMovie />} />
+          <Route path='/detailtv/:id/' element={<DetailTv />} />
         </Routes>
       </BrowserRouter>
     </>

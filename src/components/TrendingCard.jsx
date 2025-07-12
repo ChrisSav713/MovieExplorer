@@ -14,7 +14,9 @@ const TrendingCard = ({ movie }) => {
   } = movie
 
   return (
-    <Link to={`/detail/${movie.id}`}>
+    <Link
+      to={movie.title ? `/detailmovie/${movie.id}` : `/detailtv/${movie.id}`}
+    >
       <div className='bg-gray-800 rounded overflow-hidden shadow-md hover:shadow-lg transition'>
         {console.log(movie)}
         {backdrop_path ? (
