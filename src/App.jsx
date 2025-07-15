@@ -18,7 +18,7 @@ function App() {
       <header className='App-header'></header>
       <BrowserRouter>
         <Routes>
-          <Route path='/' default element={<Home />} />
+          <Route path='/' default element={<Search />} />
           <Route path='/person' element={<Person />} />
           <Route path='/popular' element={<Popular />} />
           <Route path='/query' element={<Query />} />
